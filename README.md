@@ -1,1 +1,1 @@
-# test-tweets
+# test-tweets app
