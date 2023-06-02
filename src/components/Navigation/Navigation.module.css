@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px 0;
+  border-bottom: 1px solid #5736a3;
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-70deg, #b696e6, #704ac9);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

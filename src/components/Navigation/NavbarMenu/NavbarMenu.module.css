@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.link {
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #5736a3;
+  background-color: #dacbf1;
+  outline: 2px solid #5736a3;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.link.active {
+  background-color: #5736a3;
+  background-image: linear-gradient(315deg, #5736a3 0%, #8463d2 74%);
+  color: #dacbf1;
+  outline: 2px solid #dacbf1;
+}
