@@ -1,6 +1,7 @@
+import Users from "components/Users/Users";
 const TweetsPage = () => {
     return (
-        <div>Tweets Page</div>
+        <Users/>
     )
 }
 export default TweetsPage;
