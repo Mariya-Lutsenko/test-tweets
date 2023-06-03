@@ -2,7 +2,7 @@ import styles from './UserCard.module.css'
 import PropTypes from 'prop-types';
 import Logo from './Logo/Logo';
 import BackgroundImage from './BackgroundImage/BackgroundImage';
-import Avatar from 'components/Avatar/Avatar';
+import Avatar from './Avatar/Avatar';
 import UserInfo from './UserInfo/UserInfo';
 
 const UserCard = ({id, user, tweets, followers, src, followingList, setFollowingList}) => {
