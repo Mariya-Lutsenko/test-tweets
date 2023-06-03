@@ -54,7 +54,7 @@ const Users = () => {
                         user={user}
                         tweets={tweets}
                         followers={followers}
-                        avatar={avatar}
+                        src={avatar}
                         followingList={followingList}
                         setFollowingList={setFollowingList}
 
