@@ -16,8 +16,12 @@ const UserInfo = ({id, user, tweets, followers, followingList, setFollowingList}
     )
 }
 UserInfo.propTypes = {
+    id: PropTypes.string.isRequired,
     user: PropTypes.string.isRequired,
     tweets: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    followingList: PropTypes.array.isRequired,
+    setFollowingList: PropTypes.func.isRequired,
 };
 
 export default UserInfo;
