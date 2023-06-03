@@ -1,7 +1,7 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-  background-color: #dbe9f4;
+  background-color: #f7f3ee;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;

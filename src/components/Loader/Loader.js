@@ -1,13 +1,13 @@
-import { Oval } from 'react-loader-spinner';
+import { Puff } from 'react-loader-spinner';
 import styles from './Loader.module.css';
 
 const Loader = () => {
   return (
     <div className={styles.overlay}>
-      <Oval
-        height={120}
-        width={120}
-        color="rgba(72, 157, 242, 1)"
+      <Puff
+        height={250}
+        width={250}
+        color=" #5CD3A8"
         wrapperStyle={{}}
         wrapperClass=""
         visible={true}

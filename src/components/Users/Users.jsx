@@ -63,7 +63,8 @@ const Users = () => {
         })}
       </ul>
       {isLoading && <Loader/>}
-      <ButtonLoadMore onClick={onClickBtn} />
+      {users.length > 0 && <ButtonLoadMore onClick={onClickBtn} /> }
+ 
     </div>
   );
 };
