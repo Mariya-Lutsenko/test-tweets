@@ -1,4 +1,6 @@
-# test-tweets app
+# Tweets Cards
+
+![image](https://res.cloudinary.com/dzbevpbos/image/upload/v1685817540/about_project_t4nopv.png)
 
 ## Project review
 
