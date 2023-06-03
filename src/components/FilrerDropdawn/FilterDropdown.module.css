@@ -1,0 +1,41 @@
+.filterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.label {
+  color: #5736a3;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.select {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  border: 3px solid #5736a3;
+  background-color: #dacbf1;
+  color: #5736a3;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.select:hover {
+  color: #060606;
+}
+
+.optionName {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+}

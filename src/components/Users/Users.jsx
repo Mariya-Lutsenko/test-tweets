@@ -1,15 +1,17 @@
 import styles from './Users.module.css';
+import PropTypes from 'prop-types';
 import { getUsers } from 'services/api';
 import { useEffect, useState } from 'react';
 import UserCard from 'components/UserCard/UserCard';
 import ButtonLoadMore from 'components/ButtonLoadMore/ButtonLoadMore';
 import Loader from 'components/Loader/Loader';
 
-const Users = () => {
+const Users = ({filter}) => {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [followingList, setFollowingList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [filteredUsers, setFilteredUsers] = useState([]);
 
   useEffect(() => {
     const storedFollowingList = JSON.parse(localStorage.getItem('following'));
@@ -38,6 +40,18 @@ const Users = () => {
       fetchUsers()
   }, [page]) 
 
+  useEffect(() => {
+    let updatedUsers = users;
+    if (filter === 'show all') {
+        updatedUsers = users;
+    } else if (filter === 'follow') {
+        updatedUsers = users.filter((user) => !followingList.includes(user.id));
+    } else if (filter === 'followings') {
+        updatedUsers = users.filter((user) => followingList.includes(user.id));
+    }
+    setFilteredUsers(updatedUsers);
+}, [users, filter, followingList]);
+
 
 
   const onClickBtn = () => {
@@ -47,7 +61,7 @@ const Users = () => {
   return (
     <div className={styles.listContainer}>
       <ul className={styles.list}>
-        {users.map(({ avatar, user, tweets, followers, id }) => {
+        {filteredUsers.map(({ avatar, user, tweets, followers, id }) => {
           return (
             <UserCard
               key={id}
@@ -63,10 +77,13 @@ const Users = () => {
         })}
       </ul>
       {isLoading && <Loader/>}
-      {users.length > 0 && <ButtonLoadMore onClick={onClickBtn} /> }
+      {filteredUsers.length > 0 && <ButtonLoadMore onClick={onClickBtn} /> }
  
     </div>
   );
 };
 
+Users.propTypes = {
+  filter: PropTypes.string.isRequired,
+};
 export default Users;
