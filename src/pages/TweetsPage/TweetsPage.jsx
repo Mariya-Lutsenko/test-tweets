@@ -7,9 +7,9 @@ import FilterDropdown from 'components/FilrerDropdawn/FilterDropdown';
 const TweetsPage = () => {
   const [selectedFilter, setSelectedFilter] = useState('show all');
 
-  const handleFilterChange = (selectedValue) => {
+  const handleFilterChange = selectedValue => {
     setSelectedFilter(selectedValue);
-};
+  };
 
   return (
     <div>
@@ -17,8 +17,9 @@ const TweetsPage = () => {
         <ButtonGoBack />
         <FilterDropdown onChange={handleFilterChange} />
       </div>
-      <Users filter={selectedFilter}/>
+      <Users filter={selectedFilter} />
     </div>
   );
 };
+
 export default TweetsPage;

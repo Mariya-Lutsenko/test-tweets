@@ -5,21 +5,16 @@ import { IconContext } from 'react-icons';
 
 import NavbarMenu from './NavbarMenu/NavbarMenu';
 
-
-  
 const Navigation = () => {
   return (
     <nav className={styles.wrapper}>
       <Link className={styles.logo} to="/">
-        <IconContext.Provider
-          value={{ color: '#704ac9' }}
-        >
-            <RiFileUserLine />
+        <IconContext.Provider value={{ color: '#704ac9' }}>
+          <RiFileUserLine />
         </IconContext.Provider>
         Tweets Cards
       </Link>
-      <NavbarMenu/>
-      
+      <NavbarMenu />
     </nav>
   );
 };

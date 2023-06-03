@@ -7,16 +7,16 @@ const getClassName = ({ isActive }) => {
 };
 
 const NavbarMenu = () => {
-    return (
-      <div className={styles.wrapper}>
-        <NavLink className={getClassName} to="/">
-          Home
-        </NavLink>
-        <NavLink className={getClassName} to="/tweets">
+  return (
+    <div className={styles.wrapper}>
+      <NavLink className={getClassName} to="/">
+        Home
+      </NavLink>
+      <NavLink className={getClassName} to="/tweets">
         Tweets
-        </NavLink>
-      </div>
-    );
-  };
-  
-  export default NavbarMenu;
+      </NavLink>
+    </div>
+  );
+};
+
+export default NavbarMenu;
