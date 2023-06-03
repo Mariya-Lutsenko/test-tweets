@@ -1,5 +1,6 @@
-import styles from './BackgroundImage.module.css';
-import cardImage from "../../../src/assets/cardImage.png"
+import styles from './BackgroundImage.module.css'
+import cardImage from '../../../src/assets/cardImage.png'
+
 
 const BackgroundImage = () => {
     return (
