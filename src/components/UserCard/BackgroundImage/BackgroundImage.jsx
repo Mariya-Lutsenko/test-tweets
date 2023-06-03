@@ -1,5 +1,5 @@
 import styles from './BackgroundImage.module.css'
-import cardImage from '../../images/cardImage.png'
+import cardImage from '../../../images/cardImage.png'
 
 
 

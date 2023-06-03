@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './CountFollowers.module.css';
 import { useState, useEffect, useMemo } from 'react';
-import FollowButton from 'components/FollowButton/FollowButton';
+import FollowButton from '../FollowButton/FollowButton';
 
 const CountFollowers = ({ id, followers, followingList, setFollowingList }) => {
   const initialCountFollowers = useMemo(() => {

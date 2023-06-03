@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import styles from './UserInfo.module.css';
-import UserName from 'components/UserName/UserName';
-import CountTweets from "components/CountTweets/CountTweets";
-import CountFollowers from "components/CountFollowers/CountFollowers";
+import UserName from "../UserName/UserName";
+import CountTweets from "../CountTweets/CountTweets";
+import CountFollowers from "../CountFollowers/CountFollowers";
 
 const UserInfo = ({id, user, tweets, followers, followingList, setFollowingList}) => {
     return (
