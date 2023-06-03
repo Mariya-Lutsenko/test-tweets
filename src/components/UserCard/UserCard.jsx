@@ -19,4 +19,13 @@ return (
     </li>
 )
 }
+UserCard.propTypes = {
+    id: PropTypes.string.isRequired,
+    user: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
+    tweets: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    followingList: PropTypes.array.isRequired,
+    setFollowingList: PropTypes.func.isRequired,
+};
 export default UserCard;

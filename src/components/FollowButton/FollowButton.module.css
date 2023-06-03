@@ -16,7 +16,8 @@
   padding: 14px 28px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: #5736a3;
   border: 3px solid #5736a3;
 }
