@@ -1,5 +1,5 @@
 import styles from './Logo.module.css';
-import logo from '../../../src/assets/logo.png';
+import logo from '../../images/logo.png';
 
 const Logo = () => {
     return (

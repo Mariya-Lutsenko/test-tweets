@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styles from './Avatar.module.css'
-import defaultAvatar from '../../../src/assets/defaultAvatar.png'
+import defaultAvatar from '../../images/defaultAvatar.png'
 
 const Avatar = ({src}) => {
     return (
